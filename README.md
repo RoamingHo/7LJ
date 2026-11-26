@@ -41,7 +41,8 @@ the $N=7$ single-long, colored, weak-$C_5$, and strong-$C_5$ trees, which take
 from a minute to roughly half an hour each to replay) are not rerun by
 `verify.py`. Instead, their closure is checked here via compact receipts under
 `proofs/`, while the complete schedules, inputs, and independent from-root
-checkers are distributed in the companion Zenodo archive.
+checkers are distributed in the companion Zenodo archive
+([10.5281/zenodo.24560370](https://doi.org/10.5281/zenodo.24560370)).
 
 A note on paths inside `proofs/`: in `proofs/n6_tree/closure.json`, the
 `checker`, `config`, `events`, and chunk report/state paths correspond to the
