@@ -1,0 +1,137 @@
+{
+  "arithmetic": "Exact Fraction and Q(sqrt(5)); no floating point or numerical optimization.",
+  "candidate": {
+    "all_ring_radii_equal": true,
+    "candidate_gauge_templates": 1,
+    "coordinates": [
+      "(0,0,0)",
+      "(2*H,0,0)",
+      "(H,R,0)",
+      "(H,(sqrt(5)-1)*R/4,u*R)",
+      "(H,-(sqrt(5)+1)*R/4,v*R)",
+      "(H,-(sqrt(5)+1)*R/4,-v*R)",
+      "(H,(sqrt(5)-1)*R/4,-u*R)"
+    ],
+    "parameters": "t is the existing isolated positive shape root; R=(A(t)/C(t))^(1/6); H=R*sqrt(t)>0.",
+    "radicals": "u=sqrt((5+sqrt(5))/8)>0; v=sqrt((5-sqrt(5))/8)>0",
+    "scope": "Exact distance identities and domain inclusion conditional on the existing isolated shape-root theorem. No new local certificate is claimed.",
+    "short_squared_distance_types": {
+      "apex_apex": [
+        "15876/15625",
+        "280053/250000"
+      ],
+      "apex_ring": [
+        "14994/15625",
+        "1036953/1000000"
+      ],
+      "ring_short": [
+        "30429/31250",
+        "2096613/2000000"
+      ]
+    },
+    "x2_equals_d_over_2": true,
+    "z3_strictly_positive": true
+  },
+  "coverage_ties": "Keep weak max-rho, x2<=d/2 and z3>=0 inequalities; choose any tied ring anchor.",
+  "dynamic_constraints": [
+    "d-S <= x_i <= S for i=2..6; x2<=d/2; z3>=0",
+    "rho_i^2=y_i^2+z_i^2 <= y2^2 for i=2..6",
+    "a^2 <= q_ij <= S^2 for every one of the 16 short pairs",
+    "B <= q_ij <= 4*S^2 for every one of the 5 long pairs",
+    "rho_i^2 <= S^2-max(x_i^2,(d-x_i)^2) for i=2..6",
+    "y2^2 <= S^2-d^2/4"
+  ],
+  "global_LJ7_optimality_proved": false,
+  "long_mask_combinations_lex_order": 733184,
+  "long_pairs": [
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      6
+    ]
+  ],
+  "long_q_lower": "5329/2500",
+  "long_radius": "73/50",
+  "p2_rho_lower": "11/25",
+  "requires_stationarity": false,
+  "requires_subcluster_lower_bound": false,
+  "rmin": "229/250",
+  "schema": "lj7.c5-apex-axis-domain-audit.v1",
+  "scope": "All finite-energy E<=upper configurations whose long graph is C5 plus two isolates.",
+  "short_cycle": [
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "short_loss_budget": "21701905067505680672932053393/45804096092980517423042000000",
+  "short_loss_budget_cap": "237/500",
+  "short_rmax": "243/200",
+  "static_box": {
+    "d": [
+      "229/250",
+      "243/200"
+    ],
+    "x2": [
+      "-299/1000",
+      "243/400"
+    ],
+    "x3_x4_x5_x6": [
+      "-299/1000",
+      "243/200"
+    ],
+    "y2": [
+      "11/25",
+      "563/500"
+    ],
+    "y3_y4_y5_y6_z4_z5_z6": [
+      "-563/500",
+      "563/500"
+    ],
+    "z3": [
+      "0",
+      "563/500"
+    ]
+  },
+  "strict_margins": {
+    "budget_cap": "9236480567084585589854607/45804096092980517423042000000",
+    "height_packing": "1771/50000",
+    "short_lower_loss": "63309816322459702645835942583/10399100907951462867435049320500",
+    "short_upper_loss": "19842172324325524259435931863/21195579137608101757147216600500",
+    "transverse_upper": "283/200000"
+  },
+  "transverse_rmax": "563/500",
+  "upper": "-33010767/2000000",
+  "whole_x_span_upper": "757/500"
+}

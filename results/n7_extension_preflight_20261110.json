@@ -1,0 +1,67 @@
+{
+  "A": "18/25+10/(1+t)^6+1/(4096*t^6)",
+  "B": "2+10/(1+t)^3+1/(64*t^3)",
+  "ambient_dimension": 3,
+  "candidate_fresh_verification_command": [
+    ".conda/bin/python",
+    "-I",
+    "-B",
+    "-O",
+    "proofs/n7_candidate/candidate.py",
+    "--check",
+    "proofs/n7_candidate/candidate.json"
+  ],
+  "component_event_counts": {
+    "aux_non_strong": 1767,
+    "non_C5_colored": 129506,
+    "strong_C5": 153333
+  },
+  "every_prior_tree_replayed_in_this_command": false,
+  "exact_minimum": "-B(t)^2/A(t)",
+  "final_search_target": "-2063173021/125000000",
+  "fresh_attainment_and_strong_domain_checks": true,
+  "fresh_graph_reduction_and_component_inventory_checks": true,
+  "global_LJ7_optimality_proved": true,
+  "minimizing_configuration": "pentagonal bipyramid",
+  "minimum_energy_display": "-16.505384168012215592988659709778810154442458992449694342491144817",
+  "particles": 7,
+  "potential": "sum_{i<j}(r_ij^-12-2*r_ij^-6)",
+  "proof_join": [
+    "The certified feasible candidate lies below U; separation and all proper dissociation bounds give attainment of a global minimum.",
+    "An attained minimum is stationary. The independent N6 bound and complete auxiliary-graph proofs force auxiliary graph C5 plus two isolates.",
+    "A minimum auxiliary edge at most B is excluded by the complete exact non-strong tree after a graph rotation, without imposing a Cartesian anchor.",
+    "Otherwise all five auxiliary edges exceed B. The complete apex chart and complete strong distance tree exclude every branch or localize it to the same exact candidate.",
+    "Thus every global minimizer is congruent, up to particle relabeling, to that exact candidate and has its energy; candidate feasibility gives equality."
+  ],
+  "schema": "lj7.exact-global-minimum-assembly.v1",
+  "shape_polynomial_coefficients_ascending": [
+    "-150",
+    "-550",
+    "-900",
+    "7576",
+    "3157",
+    "11571",
+    "19985",
+    "-635225",
+    "1118016",
+    "1109952",
+    "369216"
+  ],
+  "shape_root_interval": {
+    "lower": {
+      "decimal_approximation": "0.360183728717451992793791730876781430114428784820215507562436226647659199637",
+      "denominator": "125542034707733615276715788464153328322047108889280690257920",
+      "numerator": "45218198171807266961736093399564349390280926449572078943423"
+    },
+    "upper": {
+      "decimal_approximation": "0.360183728717451992793791730876781430114428784820215507562437819739570332089",
+      "denominator": "156927543384667019095894735580191660402558886111600862822400",
+      "numerator": "56522747714759083702170116749455436737851158061965098679279"
+    }
+  },
+  "status": "proved",
+  "t": "the unique positive root of the recorded polynomial",
+  "unique_up_to_euclidean_isometries_and_particle_permutations": true,
+  "verification_mode": "Assembly of pinned, actually executed exact proof bundles; fresh joining lemmas and algebraic/local candidate verification. Full component tree replays are recorded separately in their immutable bundles.",
+  "wall_seconds": 96.0203916253522
+}

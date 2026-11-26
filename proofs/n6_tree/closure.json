@@ -1,0 +1,163 @@
+{
+ "schema": "lj6.independent-lower-proof-bundle.v1",
+ "checker": "proofs/check_n6_from_root.py",
+ "config": "proofs/n6_lower129_full45.cfg",
+ "events": "proofs/n6_lower129_full45.events.tsv",
+ "lower_bound": "-129/10",
+ "events_verified": 586523,
+ "final_receipt": "receipt.json",
+ "executed_chain": [
+  {
+   "report": "results/n6_independent_replay_v2_chunk1.json",
+   "state": "results/n6_independent_replay_v2_chunk1.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk2.json",
+   "state": "results/n6_independent_replay_v2_chunk2.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk3.json",
+   "state": "results/n6_independent_replay_v2_chunk3.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk4.json",
+   "state": "results/n6_independent_replay_v2_chunk4.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk5.json",
+   "state": "results/n6_independent_replay_v2_chunk5.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk6.json",
+   "state": "results/n6_independent_replay_v2_chunk6.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk7.json",
+   "state": "results/n6_independent_replay_v2_chunk7.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk8.json",
+   "state": "results/n6_independent_replay_v2_chunk8.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk9.json",
+   "state": "results/n6_independent_replay_v2_chunk9.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk10.json",
+   "state": "results/n6_independent_replay_v2_chunk10.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk11.json",
+   "state": "results/n6_independent_replay_v2_chunk11.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk12.json",
+   "state": "results/n6_independent_replay_v2_chunk12.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk13.json",
+   "state": "results/n6_independent_replay_v2_chunk13.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk14.json",
+   "state": "results/n6_independent_replay_v2_chunk14.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk15.json",
+   "state": "results/n6_independent_replay_v2_chunk15.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk16.json",
+   "state": "results/n6_independent_replay_v2_chunk16.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk17.json",
+   "state": "results/n6_independent_replay_v2_chunk17.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk18.json",
+   "state": "results/n6_independent_replay_v2_chunk18.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk19.json",
+   "state": "results/n6_independent_replay_v2_chunk19.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk20.json",
+   "state": "results/n6_independent_replay_v2_chunk20.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk21.json",
+   "state": "results/n6_independent_replay_v2_chunk21.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk22.json",
+   "state": "results/n6_independent_replay_v2_chunk22.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk23.json",
+   "state": "results/n6_independent_replay_v2_chunk23.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk24.json",
+   "state": "results/n6_independent_replay_v2_chunk24.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk25.json",
+   "state": "results/n6_independent_replay_v2_chunk25.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk26.json",
+   "state": "results/n6_independent_replay_v2_chunk26.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk27.json",
+   "state": "results/n6_independent_replay_v2_chunk27.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk28.json",
+   "state": "results/n6_independent_replay_v2_chunk28.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk29.json",
+   "state": "results/n6_independent_replay_v2_chunk29.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk30.json",
+   "state": "results/n6_independent_replay_v2_chunk30.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk31.json",
+   "state": "results/n6_independent_replay_v2_chunk31.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk32.json",
+   "state": "results/n6_independent_replay_v2_chunk32.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk33.json",
+   "state": "results/n6_independent_replay_v2_chunk33.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk34.json",
+   "state": "results/n6_independent_replay_v2_chunk34.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk35.json",
+   "state": "results/n6_independent_replay_v2_chunk35.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk36.json",
+   "state": "results/n6_independent_replay_v2_chunk36.state.json"
+  },
+  {
+   "report": "results/n6_independent_replay_v2_chunk37.json"
+  }
+ ],
+ "python_version": "3.12.16 (main, Oct 26 2026, 11:31:43) [Clang 21.1.8 ]",
+ "sympy_version": "1.14.0",
+ "runtime_scope": "Python and SymPy are external; all project proof source and input data are copied and hashed.",
+ "scope": "Integrity inventory of an actually executed independent from-root proof. Reexecute the checker from root to reproduce its mathematics; N6 closure alone does not prove N7 optimality.",
+ "recorded_file_count": 2
+}

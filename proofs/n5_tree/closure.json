@@ -1,0 +1,10 @@
+{
+ "schema": "lj5.independent-proof-bundle.v1",
+ "checker": "proofs/check_n5_from_root.py",
+ "final_receipt": "receipt.json",
+ "python_version": "3.12.16 (main, Oct 26 2026, 11:31:43) [Clang 21.1.8 ]",
+ "sympy_version": "1.14.0",
+ "runtime_scope": "The Python/SymPy runtime is external. All project proof code and input artifacts used by this replay are copied and hashed.",
+ "scope": "Hash inventory of independently executed proof inputs and receipts; use the checker from the root to independently reproduce the mathematics.",
+ "recorded_file_count": 3
+}

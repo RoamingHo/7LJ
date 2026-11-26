@@ -1,0 +1,31 @@
+{
+ "ambient_dimension": 3,
+ "certificate": "single_long_certificate.json",
+ "certificate_sha256": "890410550ab22e5428481acca7cacdd54e40ed24efcdfa8ffe925b3361e4b8a3",
+ "checker": "verify_single_long.py",
+ "checker_sha256": "239455d4ac6afefdadcf7fc4c4d9eb85f2e556cd008d362dc0773afb3bacc438",
+ "eight_auxiliary_edges_lower_exact": "-86317736481907954096399338467094010436699639733/5273659429604657122662560172632970915803818441",
+ "energy_normalization": "sum_{i<j}(r_ij^-12-2*r_ij^-6)",
+ "exact_long_pair_count": 1,
+ "global_LJ7_optimality_proved": false,
+ "labelled_marked_graphs": 1269660,
+ "lower_exact": "-1686502458999513208008484567698562051364922645002585357903979843276614066484487002660604841165344987333101687315643093985683931807389397373725030755447470781476725391977520827799211940923471199215984410806563621/102519894328670861645562567779806292340844147923288711045098352254445314766249392514219641554934779362134858836309843343620382340039144941129458824687746230467899468372558227288973756045763143673600000000000000",
+ "marked_graphs": 866,
+ "mathematical_derivation": "theorem.md",
+ "particles": 7,
+ "proof_dependencies": {
+  "certificate.json": "95a813a5af2e0541f015cbc76e60dec560ba5e81bddf3b7c2761e9e23f6ae6e5",
+  "single_long_certificate.json": "890410550ab22e5428481acca7cacdd54e40ed24efcdfa8ffe925b3361e4b8a3",
+  "verify_certificate.py": "6c360eed6add8380b824069ebc897420a45ecb40461b9ef0fd9fe4484246ab78",
+  "verify_single_long.py": "239455d4ac6afefdadcf7fc4c4d9eb85f2e556cd008d362dc0773afb3bacc438"
+ },
+ "radius_exact": "73/50",
+ "records": 20784,
+ "requires_L5_or_L6": false,
+ "requires_stationarity": true,
+ "schema": "lj7.single-long-spectral-independent-proof-bundle.v1",
+ "scope": "Every finite-energy stationary seven-point configuration in R^3 with exactly one pair at distance>=73/50 has E>=lower_exact>upper_exact. This excludes the one-long-pair family only and is not a full global LJ7 optimality proof.",
+ "slabs": 24,
+ "upper_exact": "-33010767/2000000",
+ "recorded_file_count": 2
+}

@@ -1,0 +1,109 @@
+{
+  "N5_dependency": {
+    "L5_exact": "-71123847/7812500",
+    "fresh_interval_replay": false,
+    "integrity_checked_files": 32
+  },
+  "ambient_dimension": 3,
+  "energy_normalization": "sum_{i<j}(r_ij^-12-2*r_ij^-6)",
+  "fresh_N5_interval_replay": false,
+  "fresh_new_mathematics": {
+    "local_endpoint": {
+      "assumed_gram_frobenius_radius": "1/100000",
+      "candidate_energy_exact": "-3267/257",
+      "fresh_local_hessian_gershgorin_margin": "103737456746615353186259119542802848166893859355/365375409332725729550921208179070754913983135744",
+      "global_N6_optimality_proved": false,
+      "localization_implies_unique_stationary_octahedron": true,
+      "maximum_box_widths": [
+        "33743451076583152887173993863250572075031305/91343852333181432387730302044767688728495783936",
+        "111736429989323369696619793872863549709383485/730750818665451459101842416358141509827966271488"
+      ],
+      "maximum_box_widths_display": [
+        0.0003694112982393404,
+        0.0001529063356964612
+      ],
+      "newton_contractions": 1,
+      "positive_denominator_lower_bounds": {
+        "d": "2057628559080576751516429197753685525652666540737/1461501637330902918203684832716283019655932542976",
+        "y2": "1028762373296196647186923038839338734898552084753/1461501637330902918203684832716283019655932542976",
+        "z3": "514381182221913748769140143887443310970984039281/730750818665451459101842416358141509827966271488"
+      },
+      "requires_stationarity_for_final_candidate_identification": true,
+      "schema": "lj6.exact-gram-localization-endpoint.v1",
+      "unit_circumradius_template": [
+        2,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        -1,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "verified": true
+    },
+    "matching_gap": {
+      "eta_exact": "1/100000",
+      "exclusion_leaves": 3195,
+      "global_N6_optimality_proved": false,
+      "localization_leaves": 40,
+      "matching_cube_covered": true,
+      "maximum_eta_squared_display": 9.780392315812485e-11,
+      "nodes": 6469,
+      "requires_stationarity": false,
+      "splits": 3234,
+      "verified": true
+    },
+    "single_long": {
+      "fresh_matching_reduction_checked": false,
+      "global_N6_optimality_proved": false,
+      "graphs": 18,
+      "leaves": 70,
+      "margin_display": 0.0030350126010688424,
+      "minimum_energy_lower_exact": "-123531744813704381281/9720000000000000000",
+      "requires_stationarity": true,
+      "scalar_subinterval_checks": 8614,
+      "single_long_family_excluded": true,
+      "verified": true
+    },
+    "two_long_nonmatching": {
+      "fresh_matching_reduction_checked": false,
+      "global_N6_optimality_proved": false,
+      "graphs": 3,
+      "leaves": 108,
+      "margin_display": 9.977244788531386e-05,
+      "minimum_energy_lower_exact": "-61780137673996662588647/4860000000000000000000",
+      "remaining_auxiliary_mask": 16897,
+      "requires_stationarity": true,
+      "scalar_subinterval_checks": 18784,
+      "two_long_nonmatching_auxiliary_family_excluded": true,
+      "verified": true
+    }
+  },
+  "global_N6_optimality_proved": true,
+  "global_N6_uniqueness_proved": true,
+  "minimizer": "regular octahedron with short-edge squared distance q, q^3=257/264",
+  "minimum_energy_display": -12.712062256809338,
+  "minimum_energy_exact": "-3267/257",
+  "particles": 6,
+  "proof_steps": [
+    "The explicit octahedron attains -3267/257.",
+    "The pinned N5 bound makes every E<=-3267/257 true-long graph a matching at R=27/20. Each pair has a third vertex at short distance from both endpoints, so the diameter is<2R. The direct pair bound gives rmin>17/20. Fixing one point therefore makes the nonempty sublevel compact, and an unrestricted minimizer is attained and stationary.",
+    "The exact Gram moment inequality excludes zero true-long edges; finite graph reduction leaves 18,4,1 auxiliary classes for one,two,three true-long edges.",
+    "Exact scalar Bernstein and spectral inertia certificates exclude all 18 single-long classes and the three nonmatching-auxiliary two-long classes at the same exact target.",
+    "The only remaining auxiliary graph is a three-edge matching. The complete [3/2,4R^2]^3 tree either excludes a cell or localizes its centered Gram matrix within 1/100000 of the exact octahedral Gram matrix.",
+    "Exact coordinate recovery and one full-box Newton contraction put every localized stationary point into the freshly verified strict local uniqueness box containing the exact octahedron."
+  ],
+  "schema": "lj6.exact-global-octahedron-proof.v1",
+  "uniqueness": "Every equality configuration is congruent to the scaled regular octahedron, up to atom permutation.",
+  "unordered_pair_multiplicities": {
+    "2q": 3,
+    "q": 12
+  },
+  "verified": true,
+  "wall_seconds": 10.602769208140671
+}

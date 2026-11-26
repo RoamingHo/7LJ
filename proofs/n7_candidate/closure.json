@@ -1,0 +1,54 @@
+{
+ "schema": "lj7.c5-apex-axis-diagnostic-producer-bundle.v1",
+ "scope": "Exact C5 apex-axis candidate and its local uniqueness certificate; diagnostic producer artifacts are not included.",
+ "candidate_verification_self_contained": true,
+ "candidate_verifier": "proofs/n7_candidate/candidate.py",
+ "domain_verifier": "proofs/n7_candidate/audit_domain.py",
+ "copy_verification_commands": [
+  {
+   "command": [
+    ".conda/bin/python",
+    "-I",
+    "-B",
+    "-O",
+    "proofs/n7_candidate/audit_domain.py",
+    "--check",
+    "proofs/n7_candidate/audit_domain.json"
+   ],
+   "stderr": "",
+   "stdout": "{\"status\": \"verified\", \"global_LJ7_optimality_proved\": false}"
+  },
+  {
+   "command": [
+    ".conda/bin/python",
+    "-I",
+    "-B",
+    "-O",
+    "proofs/n7_candidate/candidate.py",
+    "--check",
+    "proofs/n7_candidate/candidate.json"
+   ],
+   "stderr": "",
+   "stdout": "{\"verified\": true, \"global_LJ7_optimality_proved\": false}"
+  }
+ ],
+ "global_LJ7_optimality_proved": false,
+ "platform": "macOS-arm64",
+ "source_root": ".",
+ "subcluster_proof_bundles_external": true,
+ "external_subcluster_proof_bundles": [
+  {
+   "bundle": "proofs/n5_tree",
+   "final_receipt": "receipt.json",
+   "lower_bound": null,
+   "scope": "Previously completed independent proof; original sealed inventory remains external."
+  },
+  {
+   "bundle": "proofs/n6_tree",
+   "final_receipt": "receipt.json",
+   "lower_bound": "-129/10",
+   "scope": "Previously completed independent proof; original sealed inventory remains external."
+  }
+ ],
+ "recorded_file_count": 6
+}

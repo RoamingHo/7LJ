@@ -1,0 +1,72 @@
+{
+  "all_verifier_static_imports_in_stdlib": true,
+  "bytecode_writes_disabled": true,
+  "command": [
+    ".conda/bin/python",
+    "-I",
+    "-S",
+    "-B",
+    "-O",
+    "proofs/n7_zero_long/verify_certificate.py",
+    "proofs/n7_zero_long/atlas.json"
+  ],
+  "cwd": "proofs/n7_zero_long",
+  "finished_unix": 1794230228.235646,
+  "global_LJ7_optimality_proved": false,
+  "input_sha256_after": {
+    "audit_exact_run.json": "4083f9417e532fa83b9a134ac4546a363683fde685221f94c5b83dbb61cb571d",
+    "audit_scalar_matrix.json": "59acd67eb0768a3f21ba47a1f216eda50a931b736ecd3d433e5dac503228b66d",
+    "audit_scalar_matrix.py": "ce64e94cd24f557ce7583f9a3f95297c62f877d92a6bad214b171d9d38224b88",
+    "audit_spectral.json": "2cf9a239b50be026b240b247443dcc35fe24565466305a6a78d689f1d4b0aa25",
+    "audit_spectral.py": "baa6efe9be16db178c690e4dd1ecf0aa527f21ab29469f160ec12911b2d1f181",
+    "atlas.json": "95a813a5af2e0541f015cbc76e60dec560ba5e81bddf3b7c2761e9e23f6ae6e5",
+    "generate_certificate.py": "0c40315495cd5a99ef15264b26a4afb29daf222fe4d069f712c4b429fbb5b2e6",
+    "theorem.md": "4d52bede53d76fc43a7db309dd629dc2f6f4d362a1a7fcf8005279904dd7f175",
+    "verify_certificate.py": "6c360eed6add8380b824069ebc897420a45ecb40461b9ef0fd9fe4484246ab78"
+  },
+  "input_sha256_before": {
+    "audit_exact_run.json": "4083f9417e532fa83b9a134ac4546a363683fde685221f94c5b83dbb61cb571d",
+    "audit_scalar_matrix.json": "59acd67eb0768a3f21ba47a1f216eda50a931b736ecd3d433e5dac503228b66d",
+    "audit_scalar_matrix.py": "ce64e94cd24f557ce7583f9a3f95297c62f877d92a6bad214b171d9d38224b88",
+    "audit_spectral.json": "2cf9a239b50be026b240b247443dcc35fe24565466305a6a78d689f1d4b0aa25",
+    "audit_spectral.py": "baa6efe9be16db178c690e4dd1ecf0aa527f21ab29469f160ec12911b2d1f181",
+    "atlas.json": "95a813a5af2e0541f015cbc76e60dec560ba5e81bddf3b7c2761e9e23f6ae6e5",
+    "generate_certificate.py": "0c40315495cd5a99ef15264b26a4afb29daf222fe4d069f712c4b429fbb5b2e6",
+    "theorem.md": "4d52bede53d76fc43a7db309dd629dc2f6f4d362a1a7fcf8005279904dd7f175",
+    "verify_certificate.py": "6c360eed6add8380b824069ebc897420a45ecb40461b9ef0fd9fe4484246ab78"
+  },
+  "isolated_interpreter": true,
+  "numpy_or_optimizer_executed": false,
+  "optimization_enabled": true,
+  "python_version": "3.12.16 (main, Oct 26 2026, 11:31:43) [Clang 21.1.8 ]",
+  "result": {
+    "D": "73/50",
+    "certificate_sha256": "95a813a5af2e0541f015cbc76e60dec560ba5e81bddf3b7c2761e9e23f6ae6e5",
+    "global_LJ7_optimality_proved": false,
+    "labelled_graphs": 2097152,
+    "lower": "-634808771450739522131500855361912581824411528952510527137253/39328099736847366955763901071789680147291564831250000000000",
+    "lower_display": -16.141353782623092,
+    "margin_display": 0.3640297173769068,
+    "representatives": 1044,
+    "requires_L5_or_L6": false,
+    "requires_stationarity": true,
+    "seconds": 2.197161292657256,
+    "verified": true
+  },
+  "returncode": 0,
+  "schema": "lj7.spectral-frozen-actual-execution.v1",
+  "site_packages_disabled": true,
+  "started_unix": 1794230226.010839,
+  "stderr": "",
+  "stdout": "{\"verified\": true, \"certificate_sha256\": \"95a813a5af2e0541f015cbc76e60dec560ba5e81bddf3b7c2761e9e23f6ae6e5\", \"seconds\": 2.197161292657256, \"D\": \"73/50\", \"labelled_graphs\": 2097152, \"representatives\": 1044, \"lower\": \"-634808771450739522131500855361912581824411528952510527137253/39328099736847366955763901071789680147291564831250000000000\", \"lower_display\": -16.141353782623092, \"margin_display\": 0.3640297173769068, \"requires_stationarity\": true, \"requires_L5_or_L6\": false, \"global_LJ7_optimality_proved\": false}\n",
+  "verifier_static_imports": [
+    "argparse",
+    "fractions",
+    "hashlib",
+    "itertools",
+    "json",
+    "math",
+    "pathlib",
+    "time"
+  ]
+}

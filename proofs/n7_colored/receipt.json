@@ -1,0 +1,13 @@
+{
+  "cases_closed": 3586,
+  "checker_sha256": "d182abd9f50ff833a123be310a2a16d7f1dc6fc1ceca5f63d1d3b23dbfaedaba",
+  "complete_colored_family_exclusion_proved": true,
+  "errors": [],
+  "events_verified": 129506,
+  "global_LJ7_optimality_proved": false,
+  "global_long_degree_bound_proved": false,
+  "schema": "lj7.colored-independent-batch-summary.v1",
+  "scope": "Actual replay of the complete prepared non-C5 colored family only; universal long-degree and final LJ7 assembly are external.",
+  "status": "complete",
+  "wall_seconds": 159.55361104011536
+}

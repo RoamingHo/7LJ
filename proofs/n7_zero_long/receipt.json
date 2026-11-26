@@ -1,0 +1,41 @@
+{
+  "command": [
+    "python3.12",
+    "-I",
+    "-S",
+    "-B",
+    "-O",
+    "verify_certificate.py",
+    "atlas.json"
+  ],
+  "cwd": ".",
+  "cwd_basis": "receipt directory",
+  "finished_unix": 1795673648.1521761,
+  "input_sha256_after": {
+    "atlas.json": "95a813a5af2e0541f015cbc76e60dec560ba5e81bddf3b7c2761e9e23f6ae6e5",
+    "verify_certificate.py": "2429f6defa63aa62b06b3f5afc36e0d0fd1ddf19e93ea808774fe4e708f54c63"
+  },
+  "input_sha256_before": {
+    "atlas.json": "95a813a5af2e0541f015cbc76e60dec560ba5e81bddf3b7c2761e9e23f6ae6e5",
+    "verify_certificate.py": "2429f6defa63aa62b06b3f5afc36e0d0fd1ddf19e93ea808774fe4e708f54c63"
+  },
+  "python_version": "3.12.16 (main, Oct 26 2026, 11:31:43) [Clang 21.1.8 ]",
+  "result": {
+    "D": "73/50",
+    "global_LJ7_optimality_proved": false,
+    "labelled_graphs": 2097152,
+    "lower": "-634808771450739522131500855361912581824411528952510527137253/39328099736847366955763901071789680147291564831250000000000",
+    "lower_display": -16.141353782623092,
+    "margin_display": 0.3640297173769068,
+    "representatives": 1044,
+    "requires_L5_or_L6": false,
+    "requires_stationarity": true,
+    "seconds": 2.576247083954513,
+    "verified": true
+  },
+  "returncode": 0,
+  "schema": "lj7.spectral-release-execution.v1",
+  "started_unix": 1795673645.415499,
+  "stderr": "",
+  "stdout": "{\"verified\": true, \"seconds\": 2.576247083954513, \"D\": \"73/50\", \"labelled_graphs\": 2097152, \"representatives\": 1044, \"lower\": \"-634808771450739522131500855361912581824411528952510527137253/39328099736847366955763901071789680147291564831250000000000\", \"lower_display\": -16.141353782623092, \"margin_display\": 0.3640297173769068, \"requires_stationarity\": true, \"requires_L5_or_L6\": false, \"global_LJ7_optimality_proved\": false}\n"
+}

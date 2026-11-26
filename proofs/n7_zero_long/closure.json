@@ -1,0 +1,26 @@
+{
+  "D_exact": "73/50",
+  "ambient_dimension": 3,
+  "energy_normalization": "sum_{i<j}(r_ij^-12-2*r_ij^-6)",
+  "fresh_execution_receipt": "receipt.json",
+  "global_LJ7_optimality_proved": false,
+  "historical_receipt": "historical_receipt.json",
+  "historical_receipt_scope": "The historical receipt describes the original frozen verifier; the fresh receipt describes the checker shipped here.",
+  "labelled_graphs_covered": 2097152,
+  "lower_exact": "-634808771450739522131500855361912581824411528952510527137253/39328099736847366955763901071789680147291564831250000000000",
+  "mathematical_derivation": "n7_zero_long/theorem.md",
+  "mathematical_derivation_archive": "Zenodo",
+  "particles": 7,
+  "proof_dependencies": {
+    "atlas.json": "95a813a5af2e0541f015cbc76e60dec560ba5e81bddf3b7c2761e9e23f6ae6e5",
+    "verify_certificate.py": "2429f6defa63aa62b06b3f5afc36e0d0fd1ddf19e93ea808774fe4e708f54c63"
+  },
+  "receipt_sha256": "831459edb42f0bbf3328ab2cdcb6ecd3bedf6cb74606079e5629ea7a631af3a4",
+  "recorded_file_count": 4,
+  "representative_graphs": 1044,
+  "requires_L5_or_L6": false,
+  "requires_stationarity": true,
+  "schema": "lj7.spectral-stationary-diameter-proof-bundle.v1",
+  "scope": "Every finite-energy stationary seven-point configuration in R^3 with diameter<=73/50 has E>=lower_exact>upper_exact. This excludes such low-energy stationary configurations only, not every nonstationary configuration and not the full global LJ7 problem.",
+  "upper_exact": "-16.5053835"
+}

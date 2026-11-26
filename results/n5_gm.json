@@ -1,0 +1,69 @@
+{
+  "schema": "lj5.independent-global-minimum.v1",
+  "date": "2026-11-09",
+  "full_independent_replay_closed": true,
+  "exact_candidate_identified": true,
+  "global_minimum_identity": "The N5 global minimum equals the isolated D3h candidate identified by the bound exact_candidate5 artifact.",
+  "exact_candidate_artifact": "results/exact_candidate5.json",
+  "exact_energy_definition": "-B(t_star)^2/A(t_star), with t_star selected by the rational isolating interval",
+  "shape_variable": "t=H^2/R^2",
+  "selected_shape_root_interval": {
+    "lower": {
+      "numerator": "38815805771465180458260738609999326258680804911716921014243",
+      "denominator": "19615942923083377386986841947523957550319860763950107852800",
+      "decimal_approximation": "1.97878867835550513489125684789574421389909991734625784666622063406645237151"
+    },
+    "upper": {
+      "numerator": "621052892343442887332171817759989220138892878587470736227889",
+      "denominator": "313855086769334038191789471160383320805117772223201725644800",
+      "decimal_approximation": "1.97878867835550513489125684789574421389909991734625784666622382025027463641"
+    }
+  },
+  "certified_global_energy_bracket": {
+    "lower_strict": {
+      "numerator": "-9103852415707556791696198388573",
+      "denominator": "1000000000000000000000000000000",
+      "fraction": "-9103852415707556791696198388573/1000000000000000000000000000000",
+      "decimal": "-9.103852415707556791696198388573"
+    },
+    "upper_strict": {
+      "numerator": "-2275963103926889197924049597143",
+      "denominator": "250000000000000000000000000000",
+      "fraction": "-2275963103926889197924049597143/250000000000000000000000000000",
+      "decimal": "-9.103852415707556791696198388572"
+    }
+  },
+  "unconditional_L5_lower": {
+    "numerator": "-9103852415707556791696198388573",
+    "denominator": "1000000000000000000000000000000",
+    "fraction": "-9103852415707556791696198388573/1000000000000000000000000000000",
+    "decimal": "-9.103852415707556791696198388573"
+  },
+  "convenient_L5_lower": {
+    "numerator": "-71123847",
+    "denominator": "7812500",
+    "fraction": "-71123847/7812500",
+    "decimal": "-9.103852416"
+  },
+  "binary64_L5_lower": {
+    "hex": "-0x1.2352c24d2262cp+3",
+    "decimal": "-9.103852415707557",
+    "direction_verified": true
+  },
+  "domain": "All collision-free configurations of five points in Euclidean three-space for V(r)=r^-12-2r^-6.",
+  "justification": "After fixing one point at the origin to remove translation, the exact-validated closed sublevel is nonempty and compact; the additional diameter/orientation/symmetry reductions preserve a representative of every unrestricted global minimizer, so a global minimum is attained below target. Every such unrestricted minimizer has a representation in the independently reconstructed root. The independent checker excludes every other retained region by integer interval mathematics and places the entire surviving candidate box strictly inside a freshly verified unique stationary-point box containing the exact D3h candidate. Therefore the global value is that exact algebraic candidate energy.",
+  "replay_counts": {
+    "events_verified": 92965,
+    "splits": 46482,
+    "prunes": 46482,
+    "candidate_leaves": 1,
+    "pending_tree_nodes": 0,
+    "newton_exclusions": 8738,
+    "supplemental_leaf_proofs": 0,
+    "supplemental_nodes": 0
+  },
+  "final_receipt": "proofs/n5_tree/receipt.json",
+  "chain_manifest": "results/n5_independent_replay_chain.json",
+  "proof_bundle": "proofs/n5_tree",
+  "trust_boundary": "Exact integer/dyadic arithmetic, the reviewed gauge/domain lemmas, the fresh Python/SymPy algebraic/local verifiers, and actual from-root execution of the recorded prefix chain. A report hash or an attacker-supplied checkpoint alone is not a proof. No producer lower bound, pruning witness or C++ execution was used by this checker."
+}

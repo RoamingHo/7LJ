@@ -1,0 +1,58 @@
+{
+ "auxiliary_family_coverage_proved": false,
+ "checker_sha256": "6b6a33c136609dbc20eaf1a36a0a2764512da8b4ac5f1a9d6d780c11dae187d6",
+ "events": 153333,
+ "execution_complete": true,
+ "global_LJ7_optimality_proved": false,
+ "leaf_status_counts": {
+  "localized": 3769,
+  "pruned": 72898
+ },
+ "leaves": 76667,
+ "mask": 733184,
+ "pending": [],
+ "requires_apex_chart_z3_nonnegative": true,
+ "root_intervals": [
+  [
+   "5329/2500",
+   "1266461/250000"
+  ],
+  [
+   "5329/2500",
+   "1266461/250000"
+  ],
+  [
+   "5329/2500",
+   "1266461/250000"
+  ],
+  [
+   "5329/2500",
+   "1266461/250000"
+  ],
+  [
+   "5329/2500",
+   "1266461/250000"
+  ]
+ ],
+ "schema": "lj7.strong-c5-independent-proof-bundle.v1",
+ "scope": "Actual exact replay of the fixed strong-C5 distance root in the stated apex chart. Execution coverage and mathematical closure are separate; auxiliary-family and global LJ7 assembly are external.",
+ "shared_proof_statuses": {
+  "candidate_hull": "localized"
+ },
+ "splits": 76666,
+ "status": "closed",
+ "strong_c5_domain_covered_under_local_chart": true,
+ "target_exact": "-2063173021/125000000",
+ "unproved_or_error_leaves": [],
+ "workers": {
+  "49192": 38,
+  "49193": 38,
+  "49194": 38,
+  "49195": 38,
+  "49196": 37,
+  "49197": 37,
+  "49198": 37,
+  "49199": 37
+ },
+ "recorded_file_count": 1
+}
