@@ -1,62 +1,65 @@
-# Exact LJ5/LJ6/LJ7 global-optimality verification
+# 7LJ: Exact Verification of Six- and Seven-Particle Lennard-Jones Clusters
 
-Recomputes the theorem-level results of
+This repository contains the theorem-level verification code for
 *Exact Global Optimality and Uniqueness of Six- and Seven-Particle
-Lennard-Jones Clusters via Spectral Gram Relaxations* for the potential
-`V(r) = r^-12 - 2 r^-6`.
+Lennard-Jones Clusters via Spectral Gram Relaxations* (Xinze Li), under the
+potential normalization $V(r) = r^{-12} - 2r^{-6}$.
 
-Everything here runs on exact rational arithmetic and outward-directed
-interval bounds. No floating-point comparison decides a proof step.
+All proof steps rely on exact rational arithmetic (`fractions.Fraction`) and
+outward-rounded interval bounds; numerical root-finding is used only to propose
+rational centers or preconditioners, never to decide a proof step.
 
-## Run
+## Running the verification
+
+Tested with Python 3.12, SymPy 1.14, and mpmath 1.3:
 
 ```bash
 python -m venv .venv
-. .venv/bin/activate
+source .venv/bin/activate
 pip install -r requirements.txt
 python verify.py
 ```
 
-Python 3.12 with SymPy 1.14 and mpmath 1.3. The script finishes in about
-30 seconds and prints six checks:
+Running `verify.py` takes about 30 seconds and checks six groups of results:
 
-- LJ5 global optimum and uniqueness
-- LJ6 global optimum `-3267/257` and uniqueness
-- the competing C2v configuration is only a local minimum
-- LJ7 global optimum and uniqueness (pentagonal bipyramid)
-- all 143 rows of the N=8..150 propagation table
-- the LJ8 frontier: local certificates, spectral exclusion, graph inventory
+1. **LJ5**: exact candidate isolation, local uniqueness, and global closure receipt.
+2. **LJ6 (global)**: exact global minimum `-3267/257`, spectral exclusions, matching-cube localization, and octahedral uniqueness.
+3. **LJ6 (competitor)**: local certification of the $C_{2v}$ capped triangular bipyramid and strict separation from `-3267/257`.
+4. **LJ7**: algebraic isolation of the $D_{5h}$ pentagonal bipyramid, local uniqueness, and assembly of the global exclusion regions.
+5. **Propagation ($8 \le N \le 150$)**: recomputation of all 143 certified energy and diameter bound rows.
+6. **LJ8 frontier**: $C_s$ and $D_{2d}$ local certificates, stationary spectral exclusion, and distance-graph inventory.
 
-## What is recomputed and what is recorded
+## What is recomputed here vs. in the Zenodo archive
 
-`verify.py` re-executes the joining lemmas, the algebraic candidate
-isolations, the local Newton/Krawczyk certificates, the spectral graph
-exclusions, and every row of the propagation table.
+`verify.py` recomputes the algebraic root isolations, local Krawczyk/Newton
+certificates, LJ6 spectral trees (including the 6,469-node matching cube),
+LJ7 zero-long spectral exclusion, all 143 propagation rows, and the LJ8 probes
+directly from scratch.
 
-The large branch-and-bound enumeration trees themselves are not rerun.
-Their closure is read from compact receipts under `proofs/` (event counts,
-leaf statistics, target thresholds, and the recorded closure status). Each
-receipt is checked for internal consistency before it is accepted. The
-complete trees, which let anyone replay every split leaf by leaf, are
-distributed separately as a data archive.
+The larger branch-and-bound trees (the Cartesian trees for $N=5$ and $N=6$ and
+the $N=7$ single-long, colored, weak-$C_5$, and strong-$C_5$ trees, which take
+from a minute to roughly half an hour each to replay) are not rerun by
+`verify.py`. Instead, their closure is checked here via compact receipts under
+`proofs/`, while the complete schedules, inputs, and independent from-root
+checkers are distributed in the companion Zenodo archive.
 
-In `proofs/n6_tree/closure.json`, the recorded `checker`, `config`, `events`,
-and replay report/state paths refer to the separate Zenodo archive. The
-checker, config and event log are in Zenodo's `n6_tree/proof_search/`, and the
-chunk reports and states are in `n6_tree/results/`. The local `final_receipt`
-path is relative to the directory containing `closure.json`. The historical
-proof snapshots retain their original run bindings. The zero-long receipt is
-from a fresh run of the bundled checker; its derivation is in Zenodo’s
-`n7_zero_long/theorem.md`. The Zenodo README gives the full-tree replay commands.
+A note on paths inside `proofs/`: in `proofs/n6_tree/closure.json`, the
+`checker`, `config`, `events`, and chunk report/state paths correspond to the
+Zenodo layout (`n6_tree/proof_search/` and `n6_tree/results/`), whereas
+`final_receipt` is relative to the local directory containing `closure.json`.
+Likewise, `proofs/n7_zero_long/closure.json` records a fresh execution of the
+bundled checker alongside `historical_receipt.json`, while the accompanying
+derivation `n7_zero_long/theorem.md` lives in the Zenodo archive. Full replay
+instructions for all eight tree bundles are given in the Zenodo README.
 
-## Layout
+## Repository layout
 
-- `verify.py` — single entry point
-- `experiments/` — verifiers, one module group per theorem
-- `results/` — exact candidates, local certificates, propagation tables
-- `proofs/` — closure receipts and the self-contained spectral checker
-- `lj.py` — potential, gradient and coordinate helpers
+- `verify.py`: top-level entry point running all six theorem-level checks.
+- `lj.py`: Lennard-Jones potential, gradient, and coordinate helpers.
+- `experiments/`: verification modules organized by cluster size and theorem.
+- `proofs/`: compact closure receipts and the self-contained zero-long checker.
+- `results/`: certified candidate records, local boxes, and propagation tables.
 
 ## License
 
-MIT, see [LICENSE](LICENSE).
+MIT; see [LICENSE](LICENSE).
